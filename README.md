@@ -4,11 +4,10 @@ A bite-sized server monitoring framework
 ## Install and run the server agent
 
 - Get dependencies for your platform
-> Ubuntu
-`apt-get install build-essential`
 
-> RedHat / CentOS
-`yum groupinstall 'Development Tools'`
+On Debian: `apt-get install build-essential`
+
+On RedHat / CentOS: `yum groupinstall 'Development Tools'`
 
 - Get python dependencies
 `pip install -r requirements.txt`
