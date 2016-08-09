@@ -10,8 +10,8 @@ On Debian: `apt-get install build-essential`
 On RedHat / CentOS: `yum groupinstall 'Development Tools'`
 
 - Get python dependencies
-`pip install -r requirements.txt`
-> virtualenv recommended
+`pip install -r requirements.txt` 
+(virtualenv recommended)
 
 - Run the server agent
 `./sora`
