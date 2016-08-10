@@ -7,7 +7,13 @@ A bite-sized server monitoring framework
 
 On Debian: `apt-get install build-essential`
 
-On RedHat / CentOS: `yum groupinstall 'Development Tools'`
+On RedHat / CentOS: 
+```
+yum -y groupinstall 'Development Tools'
+rpm -iUvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
+yum -y update
+yum -y install python-pip python-devel
+```
 
 - Get python dependencies
 `pip install -r requirements.txt` 
