@@ -31,12 +31,12 @@ yum -y install python-pip python-devel
 > JSON output
 
 ```
-"16726": {
-        "cmdline": "/mnt/shared/sbin/dropbear -i -s -m -d /mnt/shared/etc/dropbear/dropbear_dss_host_key -r /mnt/shared/etc/dropbear/dropbear_rsa_host_key", 
+"42": {
+        "cmdline": "/bin/bash", 
         "environment": null, 
-        "name": "dropbear", 
+        "name": "bash", 
         "ppid": 1
     }
 ```
 
-(note that the `sora` agent process will *not* be shown in the process list
+(note that the `sora` agent process will *not* be shown in the process list)
