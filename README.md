@@ -28,7 +28,7 @@ yum -y install python-pip python-devel
 - Get a list of running processes on your server
 `curl $IP:1337/ps`
 
-> expected output (json)
+> JSON output
 
 ```
 "16726": {
@@ -38,3 +38,5 @@ yum -y install python-pip python-devel
         "ppid": 1
     }
 ```
+
+(note that the `sora` agent process will *not* be shown in the process list
