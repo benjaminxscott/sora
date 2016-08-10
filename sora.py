@@ -17,13 +17,18 @@ class process_list:
         for each_proc in psutil.process_iter():
             process = each_proc.as_dict(attrs=['pid', 'name', 'username','ppid','cmdline','environ']) 
             
+            
             # Handle empty command lines 
             fmt_cmdline = False
             if process['cmdline']:
                 # Convert from argv-style list of parameters to space-delimited string
                 fmt_cmdline = ' '.join(process['cmdline'])
+                
+            # skip the agent process
+            if "sora.py" in fmt_cmdline:
+                continue
             
-            # TODO convert dict of environment variables to list
+            # convert dict of environment variables to list
             if process.get('environ') is not None:
                 fmt_environs = []
                 
